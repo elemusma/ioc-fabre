@@ -73,7 +73,7 @@ echo wp_get_attachment_image($globalPlaceholderImg['id'],'full','',['class'=>'w-
         echo '<div class="header-carousel owl-carousel owl-theme position-absolute h-100">';
         foreach( $header as $image ):
             
-            echo wp_get_attachment_image($image['id'], 'full','',['class'=>'w-100 h-100 bg-img skip-lazy','style'=>'object-position:top right;top:0;left:0;'] );
+            echo wp_get_attachment_image($image['id'], 'full','',['class'=>'w-100 h-100 bg-img skip-lazy','style'=>'top:0;left:0;'] );
             
         endforeach; 
         echo '</div>';
@@ -88,7 +88,7 @@ $logoSecondary = get_field('logo_secondary','options');
 echo wp_get_attachment_image($logoSecondary['id'],'full','',['class'=>'position-absolute z-2 secondary-logo','style'=>'width:250px;height:auto;top:0px;right:0;z-index:6;']);
 ?>
 
-<div class="nav pt-3 pb-3 z-1 position-relative bg-accent w-100" style="z-index:5;">
+<div class="nav pt-1 pb-2 z-1 position-relative bg-accent w-100" style="z-index:5;">
 <div class="container">
 <div class="row align-items-center">
 <div class="col-lg-2 col-md-6 col-5">
@@ -96,7 +96,7 @@ echo wp_get_attachment_image($logoSecondary['id'],'full','',['class'=>'position-
 <?php 
 $logo = get_field('logo','options'); 
 if($logo){
-echo wp_get_attachment_image($logo['id'],'full',"",['class'=>'w-100 h-auto','style'=>'max-width:250px;']);
+echo wp_get_attachment_image($logo['id'],'full',"",['class'=>'w-100 h-auto','style'=>'max-width:100px;']);
 }
 ?>
 </a>
@@ -148,7 +148,7 @@ echo '<section class="hero position-relative z-2">';
 
 
 if(is_front_page()) {
-echo '<div class="hero-content-inner text-white" style="padding:200px 0 150px;">';
+echo '<div class="hero-content-inner text-white" style="padding:300px 0 200px;">';
 // echo '<div class="position-relative">';
 // echo '<div class="multiply overlay position-absolute w-100 h-100 bg-img"></div>';
 // echo '<div class="position-relative">';

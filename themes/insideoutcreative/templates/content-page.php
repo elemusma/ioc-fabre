@@ -88,7 +88,7 @@ echo wp_get_attachment_image($contentImage['id'], 'full', "",['class'=>'w-100 h-
 
 </div>
 <?php } else { ?> 
-<div class="row align-items-center position-relative text-white bg-accent-gold">
+<div class="row align-items-center position-relative text-white bg-accent">
 <div class="col-md-12 pt-5 pb-5 mb-2">
 <div style="margin-bottom:-1rem;">
 <?php the_sub_field('quote'); ?>
