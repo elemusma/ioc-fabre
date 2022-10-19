@@ -33,7 +33,8 @@ if(get_the_content()){
 <div class="col-md-6 overflow-h">
     <div class="position-relative">
 <?php
-echo '<video controls="" playsinline="" autoplay="" muted="" class="w-100 h-auto" src="/wp-content/themes/insideoutcreative/assets/Fabre-Engineering-About.mp4"></video>';
+echo get_field('video');
+// echo '<video controls="" playsinline="" autoplay="" muted="" class="w-100 h-auto" src="/wp-content/themes/insideoutcreative/assets/Fabre-Engineering-About.mp4"></video>';
 // if(get_field('image')){ 
 // $image = get_field('image');
 // echo wp_get_attachment_image($image['id'],'full',"",['class'=>'w-100 h-100 box-shadow img-hover']);
