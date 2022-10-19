@@ -30,7 +30,7 @@ if(get_the_content()){
 <div class="col-md-6">
 <?php the_field('content'); ?>
 </div>
-<div class="col-md-6 overflow-h asdf">
+<div class="col-md-6 overflow-h">
     <div class="position-relative">
 <?php
 echo get_field('video');
