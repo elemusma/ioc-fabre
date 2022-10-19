@@ -15,9 +15,9 @@
 <?php
 if(get_field('body','options')) { the_field('body','options'); } 
 
-echo '<div class="secondary-nav text-white position-relative z-3 pt-2 pb-2">';
+echo '<div class="secondary-nav text-white position-relative z-3 pt-2 pb-2 bg-accent-secondary w-100" style="z-index:5;">';
 
-echo '<div class="bg-accent position-absolute w-100 h-100 z-2" style="top:0;left:0;"></div>';
+// echo '<div class="bg-accent position-absolute w-100 h-100 z-2" style="top:0;left:0;"></div>';
 
 
 echo '<div class="container z-3 position-relative">';
@@ -52,7 +52,7 @@ echo '</div>';
 echo '</div>';
 
 echo '<div class="blank-space"></div>';
-echo '<header class="position-relative w-100 z-3" style="top:0;left:0;">';
+echo '<header class="position-relative w-100" style="top:0;left:0;">';
 
 $globalPlaceholderImg = get_field('global_placeholder_image','options');
 
@@ -85,10 +85,10 @@ echo wp_get_attachment_image($globalPlaceholderImg['id'],'full','',['class'=>'w-
 echo '<div class="position-absolute w-100 h-100 z-1" style="background: rgb(255,255,255);
 background: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(15,40,73,1) 100%);top:0;left:0;pointer-events:none;mix-blend-mode:multiply;"></div>';
 $logoSecondary = get_field('logo_secondary','options');
-echo wp_get_attachment_image($logoSecondary['id'],'full','',['class'=>'position-absolute z-1','style'=>'width:250px;height:auto;top:-1px;right:0;']);
+echo wp_get_attachment_image($logoSecondary['id'],'full','',['class'=>'position-absolute z-2 secondary-logo','style'=>'width:250px;height:auto;top:0px;right:0;z-index:6;']);
 ?>
 
-<div class="nav pt-3 pb-3 z-1 position-relative">
+<div class="nav pt-3 pb-3 z-1 position-relative bg-accent w-100" style="z-index:5;">
 <div class="container">
 <div class="row align-items-center">
 <div class="col-lg-2 col-md-6 col-5">

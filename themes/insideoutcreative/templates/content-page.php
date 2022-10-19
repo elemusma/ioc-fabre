@@ -6,7 +6,7 @@ get_header();
 global $post;
 
 if ( $post->post_parent ) {
-    echo '<section><a href="' . get_permalink( $post->post_parent ) . '" class="btn bg-accent-orange text-white position-fixed text-uppercase h1 btn-go-back z-3" style="left:25px;">Go Back to ' . get_the_title( $post->post_parent ) . '</a></section>';
+    echo '<section><a href="' . get_permalink( $post->post_parent ) . '" class="btn bg-accent-secondary text-white position-fixed text-uppercase h1 btn-go-back z-3" style="left:25px;">Go Back to ' . get_the_title( $post->post_parent ) . '</a></section>';
     }
 
     

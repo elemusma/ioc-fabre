@@ -13,7 +13,7 @@ $button_title = $button['title'];
 $button_target = $button['target'] ? $button['target'] : '_self';
 
 
-echo '<section class="pb-5 position-relative bg-accent-orange z-3" style="">';
+echo '<section class="pb-5 position-relative bg-accent-secondary z-3" style="">';
 echo '<div class="container">';
 // echo '<div>';
 
@@ -27,7 +27,7 @@ $iconsCounter++;
 if($iconsCounter == 1) {
     echo '<div class="col-md-3 col-6 text-center col-intro-icon" style="margin-top:-50px;">';
     echo '<div class="position-relative d-inline-block p-2 tab-icon tab-icon-active" style="border-radius:50%;border:1px solid white;" id="tab-icon-' . $iconsCounter . '">';
-    echo '<div class="position-relative bg-accent-orange d-inline-block p-2" style="border-radius:50%;">';
+    echo '<div class="position-relative bg-accent-secondary d-inline-block p-2" style="border-radius:50%;">';
     echo wp_get_attachment_image($icon['id'], 'full','',['class'=>'w-auto img-portfolio','style'=>'height:75px;width:75px;object-fit:contain;'] );
     echo '</div>';
     echo '</div>';
@@ -36,7 +36,7 @@ if($iconsCounter == 1) {
 } else {
     echo '<div class="col-md-3 col-6 text-center col-intro-icon" style="margin-top:-50px;">';
     echo '<div class="position-relative d-inline-block p-2 tab-icon" style="border-radius:50%;border:1px solid white;" id="tab-icon-' . $iconsCounter . '">';
-    echo '<div class="position-relative bg-accent-orange d-inline-block p-2" style="border-radius:50%;">';
+    echo '<div class="position-relative bg-accent-secondary d-inline-block p-2" style="border-radius:50%;">';
     echo wp_get_attachment_image($icon['id'], 'full','',['class'=>'w-auto img-portfolio','style'=>'height:75px;width:75px;object-fit:contain;'] );
     echo '</div>';
     echo '</div>';

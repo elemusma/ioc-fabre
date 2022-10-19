@@ -5,7 +5,7 @@
  */
 get_header();
 
-echo '<section class="pt-5 pb-5 position-relative bg-accent-orange">';
+echo '<section class="pt-5 pb-5 position-relative bg-accent-secondary">';
 echo '<div class="container">';
 echo '<div class="row">';
 
