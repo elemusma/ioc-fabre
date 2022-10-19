@@ -1,0 +1,12 @@
+.btn-outline-main {
+    border: 1px solid white;
+    border-radius: 0;
+    padding: 10px 45px;
+    color:#0f2849;
+    font-weight: 900;
+    transition:all .25s ease-in-out;
+}
+.btn-outline-main:hover{
+    background:#0f2849;
+    color:white;
+}

@@ -1,0 +1,50 @@
+/* queries */
+.blog-content {
+    bottom: 0;
+    z-index: 1;
+}
+.blog-content p a {
+    color: white;
+}
+/*  */
+.col-blog img.blog-img {
+    height: 150px;
+    object-fit: contain;
+}
+.blog-posts-meta a {
+    font-family: unset;
+}
+/* comments */
+.comment-form-comment label {
+    display: block;
+}
+textarea#comment {
+    width: 100%;
+}
+input#submit,input#searchsubmit {
+    background:#029d95;
+    border: none;
+    padding: 10px 30px;
+    color: white;
+    cursor:pointer;
+    cursor:pointer;
+    transition:all .25s ease-in-out;
+}
+input#searchsubmit:hover {
+    background:#03837c;
+}
+/* pagination */
+span.page-numbers.current {
+    background: white;
+    border: 2px solid #029d95;
+    padding: 10px 20px;
+    color:#029d95;
+}
+a.page-numbers {
+    background: #029d95;
+    border:2px solid #029d95;
+    padding:10px 20px;
+    color:white;
+    margin:0 0 10px !important;
+    display:inline-block;
+}

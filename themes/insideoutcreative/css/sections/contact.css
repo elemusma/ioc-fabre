@@ -1,0 +1,41 @@
+/* input.wpcf7-form-control.wpcf7-submit {
+    background: #c69c6d;
+    color: white;
+    border: none;
+    padding: 10px;
+    max-width: 200px;
+    border-radius: 25px;
+    cursor:pointer;
+    transition:all .25s ease-in-out;
+    box-shadow:none;
+}
+input.wpcf7-form-control.wpcf7-submit:hover {
+    background: #be925f;
+}
+.wpcf7 input, .wpcf7 textarea{
+    box-shadow: inset 2px 2px 5px rgba(0,0,0,.5);
+    border: none;
+    margin: 5px 0;
+}
+input, textarea, label {
+    width: 100%;
+    padding: 5px 20px;
+}
+span.ajax-loader {
+    display: none !important;
+} */
+input.gform_button.button {
+    background-color:var(--accent-orange);
+    border-radius: 25px;
+    padding: 10px 35px;
+    border: 3px solid var(--accent-orange-hover);
+    cursor: pointer;
+    transition:all .25s ease-in-out;
+    width: 100%;
+    cursor:pointer;
+    color:white;
+}
+input.gform_button.button:hover {
+    /* background-color:var(--accent-orange-hover); */
+    filter:brightness(85%);
+}
