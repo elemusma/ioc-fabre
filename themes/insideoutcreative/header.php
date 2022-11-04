@@ -116,8 +116,8 @@ wp_nav_menu(array(
 </div>
 </div>
 
-<div id="navMenuOverlay" class="position-fixed" style="z-index:4;"></div>
-<div class="col-9 nav-items bg-accent desktop-hidden" id="navItems" style="z-index:5;">
+<div id="navMenuOverlay" class="position-fixed" style="z-index:7;"></div>
+<div class="col-9 nav-items bg-accent desktop-hidden" id="navItems" style="z-index:8;">
 
 <div class="pt-5 pb-5">
 <div class="close-menu">
