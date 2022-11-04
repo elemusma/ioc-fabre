@@ -98,18 +98,6 @@ echo '</div>';
 echo '</div>';
 endif;
 
-// echo '<div class="row justify-content-center pt-5">';
-// echo '<div class="col-md-6 text-center">';
-
-// echo '<h3 class="text-accent bold mb-0" style="line-height:1;">' . $pretitle . '</h3>';
-// echo '<h2 class="text-white h1">' . $title . '</h2>';
-// echo $content;
-
-// echo '<a class="btn btn-outline-main mt-5" href="' . esc_url( $button_url ) . '" target="' . esc_attr( $button_target ) . '">' . esc_html( $button_title ) . '</a>';
-// echo '</div>';
-// echo '</div>';
-
-// echo '</div>';
 echo '</div>';
 echo '</section>';
 endwhile; endif;
@@ -131,7 +119,7 @@ if( $relationship ):
 foreach( $relationship as $post ): 
 // Setup this post for WP functions (variable must be named $post).
 setup_postdata($post);
-echo '<a href="' . get_the_permalink() . '" class="col-md-6 img-hover">';
+echo '<a href="' . get_the_permalink() . '" class="col-md-6 img-hover mb-md-0 mb-4">';
 echo '<div class="position-relative overflow-h">';
 
 the_post_thumbnail('large', array('class'=>'w-100 h-100 position-absolute','style'=>'top:0;left:0;object-fit:cover;'));
@@ -149,58 +137,6 @@ endif;
 echo '</div>';
 echo '</div>';
 echo '</section>';
-
-// if(have_rows('past_projects')): while(have_rows('past_projects')): the_row();
-// $bgImg = get_sub_field('background_image');
-// $content = get_sub_field('content');
-// $gallery = get_sub_field('gallery');
-// echo '<section class="pt-5 pb-5 position-relative bg-attachment" style="">';
-// echo '<div class="position-absolute w-100 h-100 bg-attachment" style="background:url(' . $bgImg['url'] . ');background-size:cover;background-attachment:fixed;opacity:.35;top:0;left:0;"></div>';
-
-// echo '<div class="container">';
-// echo '<div class="row">';
-// echo '<div class="col-12">';
-
-// echo '<div class="pb-4">';
-// echo $content;
-// echo '</div>';
-
-// if( $gallery ): 
-// echo '<div class="row">';
-// $galleryCounter = 0;
-// foreach( $gallery as $image ):
-// $galleryCounter++;
-
-// if($galleryCounter == 1){
-// echo '<div class="col-md-8 col-portfolio overflow-h pb-2 pr-1">';
-// // echo '<div class="position-relative">';
-// echo '<a href="' . wp_get_attachment_image_url($image['id'], 'full') . '" data-lightbox="image-set">';
-// echo wp_get_attachment_image($image['id'], 'full','',['class'=>'w-100','style'=>'height:400px;object-fit:cover;'] );
-// echo '</a>';
-// // echo '</div>';
-// echo '</div>';
-// }
-
-// if($galleryCounter > 1){
-// echo '<div class="col-md-4 col-portfolio overflow-h pb-2 pr-1 pl-1">';
-// // echo '<div class="position-relative">';
-// echo '<a href="' . wp_get_attachment_image_url($image['id'], 'full') . '" data-lightbox="image-set">';
-// echo wp_get_attachment_image($image['id'], 'full','',['class'=>'w-100','style'=>'height:400px;object-fit:cover;'] );
-// echo '</a>';
-// // echo '</div>';
-// echo '</div>';
-// }
-// endforeach; 
-// echo '</div>';
-// endif;
-
-// echo '</div>';
-// echo '</div>';
-// echo '</div>';
-
-
-// echo '</section>';
-// endwhile; endif;
 // end of projects
 
 // start of about us

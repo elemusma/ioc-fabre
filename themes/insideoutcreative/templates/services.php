@@ -14,7 +14,7 @@ if( $relationship ):
 foreach( $relationship as $post ): 
 // Setup this post for WP functions (variable must be named $post).
 setup_postdata($post);
-echo '<a href="' . get_the_permalink() . '" class="col-md-6 img-hover">';
+echo '<a href="' . get_the_permalink() . '" class="col-md-6 img-hover mb-md-0 mb-4">';
 echo '<div class="position-relative overflow-h">';
 
 the_post_thumbnail('large', array('class'=>'w-100 h-100 position-absolute','style'=>'top:0;left:0;object-fit:cover;'));
