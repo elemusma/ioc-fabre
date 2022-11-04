@@ -72,8 +72,9 @@ echo wp_get_attachment_image($globalPlaceholderImg['id'],'full','',['class'=>'w-
     if( $header ): 
         echo '<div class="header-carousel owl-carousel owl-theme position-absolute h-100">';
         foreach( $header as $image ):
-            
+            echo '<div>';
             echo wp_get_attachment_image($image['id'], 'full','',['class'=>'w-100 h-100 bg-img skip-lazy','style'=>'top:0;left:0;'] );
+            echo '</div>';
             
         endforeach; 
         echo '</div>';
