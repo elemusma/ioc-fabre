@@ -33,7 +33,7 @@ echo '</div>';
 
 
 echo '<div class="col-md-3 text-center text-white">';
-echo '<a href="https://insideoutcreative.io/" target="_blank" title="Website Development, Design &amp SEO in Colorado - Florida" style="padding-top:35px;"><img class="auto img-backlink" src="' . home_url() . '/wp-content/uploads/2022/01/created-by-inside-out-creative.png" alt="Website Development, Design &amp SEO in Colorado - Florida" width="125px" /></a>';
+echo '<a href="https://insideoutcreative.io/" target="_blank" title="Website Development, Design &amp SEO in Colorado - Florida" style="padding-top:35px;"><img class="h-auto img-backlink mt-md-0 mt-4" src="' . home_url() . '/wp-content/uploads/2022/01/created-by-inside-out-creative.png" alt="Website Development, Design &amp SEO in Colorado - Florida" style="width:125px;" /></a>';
 echo '</div>';
 
 ?>
