@@ -86,7 +86,7 @@ echo wp_get_attachment_image($globalPlaceholderImg['id'],'full','',['class'=>'w-
 echo '<div class="position-absolute w-100 h-100 z-1" style="background: rgb(255,255,255);
 background: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(15,40,73,1) 100%);top:0;left:0;pointer-events:none;mix-blend-mode:multiply;"></div>';
 $logoSecondary = get_field('logo_secondary','options');
-echo wp_get_attachment_image($logoSecondary['id'],'full','',['class'=>'position-absolute z-2 secondary-logo','style'=>'width:250px;height:auto;top:0px;right:0;z-index:6;']);
+echo wp_get_attachment_image($logoSecondary['id'],'full','',['class'=>'position-absolute z-2 secondary-logo','style'=>'width:250px;height:auto;top:0px;right:0;z-index:6;pointer-events:none;']);
 ?>
 
 <div class="nav pt-1 pb-2 z-1 position-relative bg-accent w-100" style="z-index:5;">
