@@ -33,8 +33,8 @@
     endif;
     echo '<div class="project-' . $projectCounter . ' open-modal" id="project-' . $projectCounter . '">';
     echo '<h2 class="h3 bold mt-4">' . $title . '</h2>';
-    echo '<h3 class="h4 bold mt-4">' . get_sub_field('location') . '</h3>';
-    echo '<h4 class="h5 bold mt-4">' . get_sub_field('size') . '</h4>';
+    echo '<h3 class="h4 bold">' . get_sub_field('location') . '</h3>';
+    echo '<h4 class="h5 bold">' . get_sub_field('size') . '</h4>';
     echo '<h6 class="text-accent-orange bold">' . $subtitle . '</h6>';
     echo '</div>';
     echo '</div>';
