@@ -14,6 +14,7 @@
     $gallery = get_sub_field('gallery');
     $title = get_sub_field('title');
     $subtitle = get_sub_field('subtitle');
+    $showPopup = get_sub_field('show_popup');
     $popupContent = get_sub_field('popup_content');
     $projectCounter++;
 
@@ -39,6 +40,7 @@
     echo '</div>';
     echo '</div>';
 
+if($showPopup == 'Yes'):
 echo '<div class="modal-content project-' . $projectCounter . ' position-fixed w-100 h-100 z-3">';
 echo '<div class="bg-overlay"></div>';
 echo '<div class="bg-content">';
@@ -53,6 +55,7 @@ echo '</div>';
 
 echo '</div>';
 echo '</div>';
+endif;
     
     
 endwhile;
